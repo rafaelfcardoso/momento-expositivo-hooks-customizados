@@ -1,7 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 
 import { CharCard } from '../components';
+import Filters from '../components/Filters';
 import { CharactersContext } from '../context';
+
+
 
 const fetchCharacter = async (id) => {
   const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
